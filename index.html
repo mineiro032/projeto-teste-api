@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Página Base</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2; /* Adiciona a cor de fundo desejada */
+        }
+
+        /* Estilos do Título */
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos do Ícone */
+        .icon {
+            margin-right: 10px;
+            font-size: 40px; /* Tamanho do ícone aumentado */
+            color: #25D366; /* Cor verde do WhatsApp */
+        }
+
+        /* Estilos da Imagem */
+        img {
+            max-width: 100%;
+            height: auto;
+            width: 600px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos do Texto */
+        p {
+            margin-bottom: 20px;
+        }
+
+        /* Estilos do Botão */
+.button {
+    display: inline-block;
+    padding: 17px 50px; /* Aumente os valores do padding para aumentar o tamanho */
+    margin-bottom: 10px; /* Reduzindo a margem inferior para mover o botão mais para cima */
+    background-color: #07c421;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 27px;
+    animation: pulse 1s infinite;
+    outline: none;
+    font-size: 20px; /* Tamanho da fonte aumentado */
+}
+
+        /* Estilo do Botão Desabilitado */
+        .button[disabled] {
+            background-color: #ccc;
+            cursor: not-allowed;
+            animation: none;
+            margin-top: 10px;
+        }
+
+        /* Animação de Pulsação */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1><i class="fab fa-whatsapp icon"></i>WhatsApp Clonado</h1>
+    <p>Análise (Simples) App Sigiloso:</p>
+    <span id="address" style="color:#ff0000;">Salvador</span>
+
+    <!-- INÍCIO DO SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $.get("https://ipinfo.io/json", function (response) {
+            $("#address").html(response.city);
+        }, "jsonp");
+
+        $(document).ready(function () {
+            $(".button").click(function () {
+                // Desabilitar o botão após o clique
+                $(this).attr("disabled", true);
+
+                // Criar elementos de imagem
+                var newImage1 = document.createElement("img");
+                newImage1.src = "1.png";
+                newImage1.alt = "Nova Imagem 1";
+
+                var newImage2 = document.createElement("img");
+                newImage2.src = "2.png";
+                newImage2.alt = "Nova Imagem 2";
+
+                var newImage3 = document.createElement("img");
+                newImage3.src = "logo.png";
+                newImage3.alt = "Nova Imagem 3";
+
+
+                // Criar elemento de div
+                var newDiv = document.createElement("div");
+                newDiv.className = "square";
+
+// Criar elemento de texto 1
+var newText1 = document.createElement("p");
+        newText1.innerHTML = 'Texto sobre a imagem 1';
+
+        
+
+        // Criar elemento de texto 2
+        var newText2 = document.createElement("p");
+        newText2.innerHTML = 'Texto sobre a imagem 2';
+
+        // Criar elemento de texto 3
+        var newText3 = document.createElement("p");
+        newText3.innerHTML = 'Texto sobre a imagem 3';
+
+                // Criar elementos de imagem
+                var newImage1 = document.createElement("img");
+                newImage1.src = "cabeçalho 1.png";
+                newImage1.alt = "Nova Imagem 1";
+
+                
+                var newImage2 = document.createElement("img");
+                newImage2.src = "cabeçalho.png";
+                newImage2.alt = "Nova Imagem 2";
+
+
+                // Criar elemento de texto
+                var newText = document.createElement("p");
+                newText.innerHTML = '';
+
+                // Criar elemento de texto
+                var newText2 = document.createElement("p");
+                newText2.innerHTML = '';
+
+                // Criar elemento de texto
+                var newText3 = document.createElement("p");
+                newText3.innerHTML = '';
+
+                // Criar elemento de botão
+                var newButton = document.createElement("button");
+newButton.className = "button";
+newButton.textContent = "DESBLOQUEAR ACESSO!";
+newButton.onclick = function() {
+    window.location.href = "https://pay.limpanomeoficial.store/q510ZO6QaOA3E9D";
+};
+newButton.style.marginTop = "-60px"; // Adiciona margem negativa para mover o botão para cima
+                // Adicionar os elementos à div
+                
+                newDiv.appendChild(newImage1);
+                newDiv.appendChild(newImage2);
+                newDiv.appendChild(newImage3);
+                newDiv.appendChild(newText);
+                newDiv.appendChild(newText2);
+                newDiv.appendChild(newText3);
+                newDiv.appendChild(newButton);
+
+                // Adicionar a div após o botão
+                $(".button").after(newDiv);
+
+                // Rolar a página até a nova div
+                $("html, body").animate({
+                    scrollTop: $(newDiv).offset().top
+                }, "slow");
+            });
+        });
+    </script>
+    <!-- FIM DO SCRIPT -->
+
+    <p>O <strong>WhatSpy</strong> examinou cerca de <strong>196</strong> mensagens <strong>suspeitas</strong> e aqui estão alguns dos <strong>destaques</strong>:</p>
+    <p><strong>13 mensagens</strong> continhama palavra/semelhante <strong>"Gostoso"</strong></p>
+    <p><strong>41 mensagens</strong> continham a palavra/semelhante <strong>"Amor"</strong></p>
+    <p><strong>8 mensagens</strong> continham a palavra/semelhante <strong>"Segredo"</strong></p>
+
+    <img src="gg.jpeg" alt="Minha Imagem">
+
+    <br> <!-- Adicione uma quebra de linha para criar espaço -->
+
+    <button class="button" onclick="this.disabled=true;">DESBLOQUEAR ACESSO!</button>
+
+</body>
+</html>
